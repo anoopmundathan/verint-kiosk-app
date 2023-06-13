@@ -25,7 +25,7 @@ function App() {
       </header>
       
       {view === "home" && (
-        <div role="region" aria-live="polite" aria-atomic="true">
+        <div role="region" aria-live="assertive" aria-atomic="true">
           <div style={{ height: "100px", background: "skyblue", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff" }}>
             <h1>Welcome to Citi bank</h1>
           </div>
@@ -36,7 +36,7 @@ function App() {
       )}
 
       {view === "service" && (
-        <div role="region" aria-live="polite" aria-atomic="true">
+        <div role="region" aria-live="assertive" aria-atomic="true">
           <div style={{ display: "flex", justifyContent: 'center' }}>
               <div style={{ height: "100px", display: "flex", flex: .5, alignItems: "center", justifyContent: "center" }}>
                 <button onClick={handleBack} style={{ height: "100px", width: "300px"}}>Back</button> 
@@ -54,7 +54,7 @@ function App() {
       )}
 
     {view === "customer" && (
-        <div role="region" aria-live="polite" aria-atomic="true">
+        <div role="region" aria-live="assertive" aria-atomic="true">
           <div style={{ display: "flex", justifyContent: 'center' }}>
               <div style={{ height: "100px", display: "flex", flex: .5, alignItems: "center", justifyContent: "center" }}>
                 <button onClick={() => setView("service")} style={{ height: "100px", width: "300px"}}>Back</button> 
