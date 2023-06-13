@@ -27,7 +27,7 @@ function App() {
       {view === "home" && (
         <div role="region" aria-live="assertive" aria-atomic="true">
           <div style={{ height: "100px", background: "skyblue", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff" }}>
-            <h1>Welcome to Citi bank</h1>
+            <h1>Welcome to Barclays bank</h1>
           </div>
           <div style={{ height: "500px", display: "flex", alignItems: "center", justifyContent: "center"}}>
             <button onClick={handleClick} style={{ height: "100px", width: "300px"}}>Join Line</button>
