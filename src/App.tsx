@@ -25,8 +25,8 @@ function App() {
       </header>
       
       {view === "home" && (
-        <div role="region" aria-live="assertive" aria-atomic="true">
-          <div style={{ height: "100px", background: "skyblue", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff" }}>
+        <div>
+          <div style={{ height: "100px", background: "skyblue", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff" }} role="region" aria-live="assertive" aria-atomic="true">
             <h1>Welcome to Barclays bank</h1>
           </div>
           <div style={{ height: "500px", display: "flex", alignItems: "center", justifyContent: "center"}}>
@@ -41,7 +41,7 @@ function App() {
               <div style={{ height: "100px", display: "flex", flex: .5, alignItems: "center", justifyContent: "center" }}>
                 <button onClick={handleBack} style={{ height: "100px", width: "300px"}}>Back</button> 
               </div>
-              <div style={{ height: "100px", background: "skyblue", display: "flex", flex: 6, alignItems: "center", justifyContent: "center", color: "#fff" }}>
+              <div style={{ height: "100px", background: "skyblue", display: "flex", flex: 6, alignItems: "center", justifyContent: "center", color: "#fff" }} role="region" aria-live="assertive" aria-atomic="true">
                 <h1>Select your reason for visiting</h1>
               </div>
           </div>
@@ -59,7 +59,7 @@ function App() {
               <div style={{ height: "100px", display: "flex", flex: .5, alignItems: "center", justifyContent: "center" }}>
                 <button onClick={() => setView("service")} style={{ height: "100px", width: "300px"}}>Back</button> 
               </div>
-              <div style={{ height: "100px", background: "skyblue", display: "flex", flex: 6, alignItems: "center", justifyContent: "center", color: "#fff" }}>
+              <div style={{ height: "100px", background: "skyblue", display: "flex", flex: 6, alignItems: "center", justifyContent: "center", color: "#fff" }} role="region" aria-live="assertive" aria-atomic="true">
                 <h1>Please fill out the fields so that our banker can call you by name when it's your turn</h1>
               </div>
           </div>
