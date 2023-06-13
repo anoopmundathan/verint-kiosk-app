@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Clock from './Clock';
 
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
           </div>
           <div style={{ height: "500px", display: "flex", alignItems: "center", justifyContent: "center"}}>
            <button onClick={handleService} style={{ height: "100px", width: "300px"}}>Apply for credi card</button>
-           <button onClick={handleService} style={{ height: "100px", width: "300px"}}>Home lending</button>
+           <button onClick={() => setView("lending")} style={{ height: "100px", width: "300px"}}>Home lending</button>
            <button onClick={handleService} style={{ height: "100px", width: "300px"}}>Investments</button>
           </div>
         </div> 
@@ -73,7 +74,9 @@ function App() {
             </label>
           </div>
         </div> 
-      )}  
+      )}
+
+      {view === "lending" && (<Clock />)}
 
     </div>
   );
